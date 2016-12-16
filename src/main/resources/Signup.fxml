@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.layout.BorderPane?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.112" fx:controller="controller.LoginController">
+    <padding><Insets bottom="10" left="25" right="25" top="25" /></padding>
+
+    <Text text="Create a new account" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+      <font>
+         <Font size="18.0" />
+      </font></Text>
+
+    <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+
+    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <Label text="Repeat password:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+
+    <PasswordField fx:id="repeatPasswordField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+    <BorderPane xmlns:fx="http://javafx.com/fxml" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="4">
+        <left>
+            <Hyperlink id="loginhl" text="Already have an account? Log in" onAction="#handleSwitchToLogin"/>
+        </left>
+        <right>
+            <Button id="actionSignup" text="Create"/>
+        </right>
+    </BorderPane>
+
+</GridPane>
