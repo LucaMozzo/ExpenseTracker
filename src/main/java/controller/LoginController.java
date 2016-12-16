@@ -7,7 +7,8 @@ import view.Login;
 import java.awt.event.ActionEvent;
 
 /**
- * Created by lucam on 16/12/2016.
+ * @author Luca Mozzo
+ * Controller for the login and signup form
  */
 public final class LoginController {
 
